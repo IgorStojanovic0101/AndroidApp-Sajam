@@ -1,0 +1,34 @@
+
+    private fun jsonParse():String {
+
+        val url = "http://192.168.1.109:1120/sajam/korisnici?username=admin&password=admin"
+
+
+        val stringReq = StringRequest(Request.Method.GET, url,
+            Response.Listener<String> { response ->
+
+                var strResp = response.toString()
+                val jsonObj: JSONObject = JSONObject(strResp)
+              //  val jsonArray: JSONArray = jsonObj.getJSONArray("korisnici")
+              // Toast.makeText(this,response["username"].toString(),Toast.LENGTH_LONG)
+
+
+
+                        /*for (i in 0 until jsonArray.length()) {
+                            val employee = jsonArray.getJSONObject(i)
+
+                            val firstName = employee.getString("firstname")
+                            val age = employee.getInt("age")
+                            val mail = employee.getString("mail")
+
+                            mTextViewResult.append("$firstName, $age, $mail\n\n")
+                        }*/
+
+            },Response.ErrorListener  {
+            Toast.makeText(this,"Nesto ne valja",Toast.LENGTH_LONG)
+
+            })
+
+        mQueue.add(stringReq)
+        return stringReq.toString()
+    }

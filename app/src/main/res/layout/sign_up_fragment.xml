@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/colorPrimaryDark"
+              android:id="@+id/signUp"
+              android:orientation="vertical">
+    <Button
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:tag="custom_login_button"
+            android:layout_margin="16dp"
+            android:text="sign in"/>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/signUpAllData"/>
+
+
+    <EditText
+            android:id="@+id/username_za_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_300"
+
+
+            android:layout_marginBottom="16dp"
+            android:hint="Username"
+    />
+
+
+
+
+    <EditText
+            android:id="@+id/password_za_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_300"
+
+
+
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+    <EditText
+            android:id="@+id/ime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_300"
+
+
+            android:layout_marginBottom="16dp"
+            android:hint="Ime"
+    />
+
+
+
+
+    <EditText
+            android:id="@+id/prezime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_300"
+
+
+
+            android:hint="Prezime"
+         />
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/danas"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Automobili" />
+        <item
+            android:id="@+id/namernice"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Sajmovi" />
+        <item
+            android:id="@+id/aktivnosti"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="News" />
+        <item
+            android:id="@+id/statistika"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Statistika" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/log_out"
+                android:icon="@drawable/ic_menu_share"
+                android:title="LogOut" />
+
+        </menu>
+    </item>
+
+</menu>
